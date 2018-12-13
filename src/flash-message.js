@@ -1,4 +1,3 @@
-import './flash-message.scss';
 import toastr from 'toastr';
 
 (function($) {
@@ -29,6 +28,7 @@ import toastr from 'toastr';
 
   };
 
+  //return the object for global use
   $.innovedFlashMessage = function() {
     const innovedFlashMessage = new InnovedFlashMessage();
     return innovedFlashMessage;
@@ -36,4 +36,5 @@ import toastr from 'toastr';
 
 })(jQuery);
 
+//export for package
 export default $.innovedFlashMessage();
