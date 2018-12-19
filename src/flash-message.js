@@ -1,3 +1,4 @@
+import './flash-message.scss';
 import toastr from 'toastr';
 
 (function($) {
@@ -14,7 +15,7 @@ import toastr from 'toastr';
       type = type || 'info'; //set info to default type if none is set
       options = options || ''; //set not extra options if not passed
       toastr[type](message, title, options); //show message
-    };
+    }
 
     this.init = function() {
       toastr.options = {
@@ -22,16 +23,13 @@ import toastr from 'toastr';
           "positionClass": "toast-top-right",
           "extendedTimeOut": "0"
       }
-    };
-
-    return this;
+    }
 
   };
 
   //return the object for global use
   $.innovedFlashMessage = function() {
-    const innovedFlashMessage = new InnovedFlashMessage();
-    return innovedFlashMessage;
+    return new InnovedFlashMessage();
   }
 
 })(jQuery);
