@@ -116,18 +116,7 @@ eval("module.exports = function() {\n\tthrow new Error(\"define cannot be used i
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _flash_message_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./flash-message.scss */ \"./src/flash-message.scss\");\n/* harmony import */ var _flash_message_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_flash_message_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var toastr__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! toastr */ \"./node_modules/toastr/toastr.js\");\n/* harmony import */ var toastr__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(toastr__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\n(function ($) {\n  'use strict';\n\n  var InnovedFlashMessage = function InnovedFlashMessage() {\n    /**\n     * Public methods\n     */\n    this.create = function (type, title, message, options) {\n      if (!message && !title) {\n        return false;\n      } //if no message and title given, exit now\n\n\n      type = type || 'info'; //set info to default type if none is set\n\n      options = options || ''; //set not extra options if not passed\n\n      toastr__WEBPACK_IMPORTED_MODULE_1___default.a[type](message, title, options); //show message\n    };\n\n    this.init = function () {\n      toastr__WEBPACK_IMPORTED_MODULE_1___default.a.options = {\n        \"closeButton\": true,\n        \"positionClass\": \"toast-top-right\",\n        \"extendedTimeOut\": \"0\"\n      };\n    };\n  }; //return the object for global use\n\n\n  $.innovedFlashMessage = function () {\n    return new InnovedFlashMessage();\n  };\n})(jQuery); //export for package\n\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ($.innovedFlashMessage());\n\n//# sourceURL=webpack:///./src/flash-message.js?");
-
-/***/ }),
-
-/***/ "./src/flash-message.scss":
-/*!********************************!*\
-  !*** ./src/flash-message.scss ***!
-  \********************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/flash-message.scss?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var toastr__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! toastr */ \"./node_modules/toastr/toastr.js\");\n/* harmony import */ var toastr__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(toastr__WEBPACK_IMPORTED_MODULE_0__);\n//import './flash-message.scss';\n\n\n(function ($) {\n  'use strict';\n\n  var InnovedFlashMessage = function InnovedFlashMessage() {\n    /**\n     * Public methods\n     */\n    this.create = function (type, title, message, options) {\n      if (!message && !title) {\n        return false;\n      } //if no message and title given, exit now\n\n\n      type = type || 'info'; //set info to default type if none is set\n\n      options = options || ''; //set not extra options if not passed\n\n      toastr__WEBPACK_IMPORTED_MODULE_0___default.a[type](message, title, options); //show message\n    };\n\n    this.init = function () {\n      toastr__WEBPACK_IMPORTED_MODULE_0___default.a.options = {\n        \"closeButton\": true,\n        \"positionClass\": \"toast-top-right\",\n        \"extendedTimeOut\": \"0\"\n      };\n    };\n  }; //return the object for global use\n\n\n  $.innovedFlashMessage = function () {\n    return new InnovedFlashMessage();\n  };\n})(jQuery); //export for package\n\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ($.innovedFlashMessage());\n\n//# sourceURL=webpack:///./src/flash-message.js?");
 
 /***/ }),
 
