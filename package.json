@@ -5,9 +5,8 @@
   "main": "flash-message.js",
   "scripts": {
     "lint": "echo '=> linting' && jshint src/flash-message.js",
-    "build": "webpack",
-    "watch": "webpack --watch",
-    "compile": "npx babel src/flash-message.js --out-file flash-message.js"
+    "build": "npx babel src/flash-message.js --out-file flash-message.js && webpack",
+    "watch": "webpack --watch"
   },
   "author": "",
   "license": "ISC",
