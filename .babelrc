@@ -1,4 +1,3 @@
 {
-	"presets": ["@babel/preset-env"],
-	"extends": "../../.babelrc"
+	"presets": ["@babel/preset-env"]
 }

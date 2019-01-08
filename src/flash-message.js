@@ -10,14 +10,14 @@ import toastr from 'toastr';
     /**
      * Public methods
      */
-    InnovedFlashMessage.create = function(type, title, message, options) {
+    this.create = function(type, title, message, options) {
       if(!message && !title) { return false; } //if no message and title given, exit now
       type = type || 'info'; //set info to default type if none is set
       options = options || ''; //set not extra options if not passed
       toastr[type](message, title, options); //show message
     }
 
-    InnovedFlashMessage.init = function() {
+    this.init = function() {
       toastr.options = {
           "closeButton": true,
           "positionClass": "toast-top-right",

@@ -17,7 +17,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
     /**
      * Public methods
      */
-    InnovedFlashMessage.create = function (type, title, message, options) {
+    this.create = function (type, title, message, options) {
       if (!message && !title) {
         return false;
       } //if no message and title given, exit now
@@ -31,7 +31,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
     };
 
-    InnovedFlashMessage.init = function () {
+    this.init = function () {
       _toastr.default.options = {
         "closeButton": true,
         "positionClass": "toast-top-right",
