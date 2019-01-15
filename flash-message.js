@@ -5,11 +5,6 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _toastr = _interopRequireDefault(require("toastr"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-//import './flash-message.scss';
 (function ($) {
   'use strict';
 
@@ -27,12 +22,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
       options = options || ''; //set not extra options if not passed
 
-      _toastr.default[type](message, title, options); //show message
-
+      toastr[type](message, title, options); //show message
     };
 
     this.init = function () {
-      _toastr.default.options = {
+      toastr.options = {
         "closeButton": true,
         "positionClass": "toast-top-right",
         "extendedTimeOut": "0"

@@ -1,6 +1,3 @@
-//import './flash-message.scss';
-import toastr from 'toastr';
-
 (function($) {
 
   'use strict';
