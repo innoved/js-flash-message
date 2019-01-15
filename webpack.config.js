@@ -9,7 +9,7 @@ module.exports = {
   entry: "./src/"+packageName+".js",
   output: {
     path: path.resolve(__dirname + "/dist"),
-    filename: "flash-message.js",
+    filename: packageName+".js",
     publicPath: "/dist"
   },
   module: {
